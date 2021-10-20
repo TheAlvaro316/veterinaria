@@ -1,3 +1,4 @@
+/* ---------------------- Contenido basico en navegador --------------------- */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -21,33 +22,35 @@ body {
   margin: auto;
   overflow: hidden;
 }
+/* -------------------------------------------------------------------------- */
 
+
+/* --------------------------- Formato para header -------------------------- */
 header {
   background: url('../img/fondo.png') #F9DC98;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 80%;
   max-height: 400px;
   color: #FFFFFF;
 }
 
-header .navbar{
-  margin: 40px 0;
+.menu{
+  margin: 20px;
   text-align: right;
 } 
 
-header .navbar a{
+.menu a{
   display: inline-block;
   color: #FFFFFF;
   margin: 0 20px;
-  padding-bottom: 9px;
   text-decoration: none;
   font-size: 1em;
   border-bottom: 2px solid transparent;
 }
 
-header .navbar a:hover{
-  border-bottom: 2px solid #FFFFFF
+.menu a:hover{
+  color: #FFFFFF;
 }
 
 header .contenedor-texto {
@@ -73,13 +76,50 @@ header .contenedor-texto .texto h2 {
   font-size: 25px;
   line-height: 25px;
 }
+/* -------------------------------------------------------------------------- */
 
+
+/* --------------------- Formato para conenido principal -------------------- */
 .main .contenedor {
   overflow: visible;
+  padding: 10px;
 }
 
-/* Formato para Footer - seccion de Contacto */
+/* ------------------------ Formato para seccion info ----------------------- */
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.info_picture{
+  margin-bottom: 1em;
+}
+
+.info_img{
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.info_text{
+  flex-basis: 60%;align-self: center;
+}
+
+.info_parrafo{
+  font-size: 30px;
+}
+
+.info2 .info_picture{
+  order: 2;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+/* ---------------- Formato para Footer - seccion de Contacto --------------- */
 footer .contacto {
   background: #aca6a6fb;
   padding: 10px;
@@ -133,6 +173,7 @@ footer .contacto .formulario .boton:hover {
 
 /* Formato para Footer - seccion de Redes Sociales */
 
+/* ------- Formato para Footer - seccion de Redes Sociales y Copyright ------ */
 footer .redes-sociales {
   background: #383838;
 }
@@ -166,3 +207,5 @@ footer .copyright {
   color: #FFFFFF;
   text-align: center;
 }
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */

@@ -139,6 +139,10 @@ footer .contacto img{
   height: auto;
 }
 
+footer .contacto .info, footer .contacto .phone{
+  font-size: 20px;
+}
+
 /* ------- Formato para Footer - seccion de Redes Sociales y Copyright ------ */
 footer .redes-sociales {
   background: #383838;

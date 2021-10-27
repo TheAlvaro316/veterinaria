@@ -31,25 +31,26 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-height: 400px;
+  max-height: 30%;
   color: #FFFFFF;
 }
 
 .menu{
   margin: 20px;
-  text-align: right;
+  text-align: center;
 } 
 
 .menu a{
   display: inline-block;
   color: #FFFFFF;
-  margin: 0 20px;
+  margin: 0 10px;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
   font-size: 1em;
 }
 
 .menu a:hover{
-  color: #FFFFFF;
+  border-bottom: 2px solid #fff;
 }
 
 header .contenedor-texto {
@@ -64,15 +65,20 @@ header .contenedor-texto .texto {
   display: inline-block;
   text-align: center;
   padding: 20px 60px;
+  
 }
 
 header .contenedor-texto .texto h1 {
+  color: #ffffff;
+  font-weight: 400;
   margin-bottom: 25px;
   font-size: 50px;
   line-height: 50px;
 }
 
 header .contenedor-texto .texto h2 {
+  color: #ffffff;
+  font-weight: 300;
   font-size: 25px;
   line-height: 25px;
 }
@@ -121,7 +127,9 @@ header .contenedor-texto .texto h2 {
 
 /* ---------------- Formato para Footer - seccion de Contacto --------------- */
 footer .contacto {
-  background: #aca6a6;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(143,143,143,1) 45%);
+  color: rgb(255, 255, 255);
   padding: 10px;
 }
 
@@ -145,7 +153,9 @@ footer .contacto .info, footer .contacto .phone{
 
 /* ------- Formato para Footer - seccion de Redes Sociales y Copyright ------ */
 footer .redes-sociales {
-  background: #383838;
+  background: rgb(89,89,94);
+  background: linear-gradient(180deg, rgba(89,89,94,1) 0%, rgba(46,46,46,1) 50%, rgba(0,0,0,1) 100%);
+
 }
 
 footer .redes-sociales .contenedor {

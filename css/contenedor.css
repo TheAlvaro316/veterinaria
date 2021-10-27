@@ -1,0 +1,27 @@
+/* ---------------------- Contenido basico en navegador --------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #40438c;
+    color: #FFFFFF;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 95%;
+    background: transparent;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */

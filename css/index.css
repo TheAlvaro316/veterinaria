@@ -1,0 +1,43 @@
+/* --------------------- Formato para conenido principal -------------------- */
+
+.main .contenedor {
+  overflow: visible;
+  padding: 10px;
+}
+
+/* ------------------------ Formato para seccion info ----------------------- */
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info_picture {
+  margin-bottom: 1em;
+}
+
+.info_img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.info_text {
+  flex-basis: 60%;
+  align-self: center;
+}
+
+.info_parrafo {
+  font-size: 30px;
+}
+
+.info2 .info_picture {
+  order: 2;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */

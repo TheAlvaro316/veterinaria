@@ -1,0 +1,59 @@
+/* --------------------------- Formato para header -------------------------- */
+
+header {
+    background: url('../img/fondo.png') #F9DC98;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 30%;
+    color: #FFFFFF;
+}
+
+.menu {
+    margin: 20px;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+header .contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 0;
+    padding: 100px 0;
+}
+
+header .contenedor-texto .texto {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1 {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+/* -------------------------------------------------------------------------- */

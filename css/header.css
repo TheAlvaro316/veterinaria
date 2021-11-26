@@ -12,6 +12,7 @@ header {
 .menu {
     margin: 20px;
     text-align: center;
+    font-size: 20px;
 }
 
 .menu a {
@@ -39,10 +40,12 @@ header .contenedor-texto .texto {
     display: inline-block;
     text-align: center;
     padding: 20px 60px;
+    background: rgba(249, 220, 152, 0.8);
+    border-radius: 24px 4px;
 }
 
 header .contenedor-texto .texto h1 {
-    color: #ffffff;
+    color: #33345f;
     font-weight: 400;
     margin-bottom: 25px;
     font-size: 50px;
@@ -50,7 +53,7 @@ header .contenedor-texto .texto h1 {
 }
 
 header .contenedor-texto .texto h2 {
-    color: #ffffff;
+    color: #40427A;
     font-weight: 300;
     font-size: 25px;
     line-height: 25px;

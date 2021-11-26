@@ -24,4 +24,12 @@ body {
     overflow: hidden;
 }
 
+/* --------------------- Formato para conenido principal -------------------- */
+
+.main .contenedor {
+    overflow: visible;
+    padding: 10px;
+  }
+  
+
 /* -------------------------------------------------------------------------- */

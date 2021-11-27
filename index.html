@@ -20,8 +20,10 @@
   <script src="https://use.fontawesome.com/4dc42e7a16.js"></script>
   <link rel="stylesheet" type="text/css" href="css/contenedor.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/comentario.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
+
 
   <!--Referencia a librerias Booststrap 4 -->
   <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1/css/bootstrap-grid.min.css">
@@ -109,7 +111,26 @@
       </div>
   </section>
   <!-- ----------------------------------------------------------------------- -->
+  <!-- ------------------------ Seccion de comentarios ----------------------- -->
+  <section class="comentario">
+    <div class="contenedor">
+      <h3 class="titulo">Enviar Correo</h3>
+      <form action="" class="formulario">
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Correo" id="correo" >
+        <textarea id="mensaje" placeholder="Mensaje"></textarea>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="ChekAviso">
+          <label class="form-check-label" for="ChekAviso">Aviso de privacidad</label>
 
+        </div>
+        <input type="submit" value="Enviar" id="boton">
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------------------------------------ -->
   <!-- ------------------------ Contenido del footer ------------------------- -->
   <footer>
     <section class="contacto" id="contacto">
@@ -164,6 +185,7 @@
   <!-- ----------------------------------------------------------------------- -->
 
   <!-- ------------------------------- Scripts ------------------------------- -->
+  <script type="text/javascript" src="js/comentario.js"></script>
   <script src="bootstrap-4.4.1/js/jquery.min.js"></script>
   <script src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
   <!-- ----------------------------------------------------------------------- -->

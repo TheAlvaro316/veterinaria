@@ -1,49 +1,59 @@
 var boton = document.getElementById("boton");
 
-boton.addEventListener('click',Verificar);
+boton.addEventListener('click', Verificar);
 
-function Verificar(event){
-    var nombre=document.getElementById("nombre").value;
-    var correo=document.getElementById("correo").value;
-    var mensaje=document.getElementById("mensaje").value;
-    var AvisoDePrivacidad=document.getElementById("ChekAviso").checked;
+function Verificar(event) {
+    var count = 0;
 
-    if(nombre ==""|| correo==""|| mensaje ==""|| AvisoDePrivacidad==false){
-        event.preventDefault();
-        if(nombre!=""){
-            var nombre = document.getElementById("nombre").value;
-            var ExNombre = /^[a-zA-ZA-y\s]{1,40}$/;
-            console.log(ExNombre.test(nombre));
-            if (ExNombre.test(nombre) == true) {
+    var nombre = document.getElementById("nombre").value;
+    var correo = document.getElementById("correo").value;
+    var mensaje = document.getElementById("mensaje").value;
+    var AvisoDePrivacidad = document.getElementById("terminos").checked;
 
-            }
-            else {
-                alert("Solo acepto letras");
-            }
-        }else{
-            alert("Fabor de llenar el nombre");
-        }
-        if(correo!=""){
-            var Correo = document.getElementById("correo").value;
-            var ExCorreo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-            if (ExCorreo.test(Correo) == true) {
+    var ExNombre = /^[a-zA-ZÁ-ÿ\s]{1,40}$/;
+    var ExCorreo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/;
 
-            }
-            else {
-                alert("El correo Esta mal Ejemplo jhon@email.com");
-            }
-        }else{
-            alert("Fabor de llenar el Correo");
+
+    if (nombre != "") { 
+        if (!ExNombre.test(nombre)) {
+            alert("El campo 'Nombre' solo acepta letras.");
+            count++;
         }
-        if(mensaje==""){
-           alert("No tiene contenido");
-        }
-        if(AvisoDePrivacidad==false){
-            alert("Fabor de leer los Avisos de privacidad");
-        }
-    }else{
-        alert("A llenado el a sido correcto su correo sera respondido lo mas pronto posible");
     }
+    else {
+        alert("Favor de llenar el campo 'Nombre'");
+        count++;
+    }
+
+    if (correo != "") {
+        if (!ExCorreo.test(correo)) {
+            alert("El correo no sigue el formato. Ejemplo: jhon@email.com");
+            count++;
+        }            
+    }
+    else {
+        alert("Favor de llenar el campo 'Correo'");
+        count++;
+    }
+
+    if (mensaje == "") {
+        alert("Favor de proporcionar un mensaje.");
+        count++;
+    }
+
+    if (AvisoDePrivacidad == false) {
+        alert("Favor de leer y aceptar nuestros Terminos y Condiciones");
+        count++;
+    }
+
+    if (count > 0){
+        event.preventDefault();
+    }
+    else{
+        alert("Responderemos a su correo lo mas pronto posible.");
+        formumario.reset();
+    }
+    
     
 
 }
